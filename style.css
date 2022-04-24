@@ -53,7 +53,7 @@ section.feature {
   margin: 5vw;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8em;
+  margin-bottom: 10vw;
   flex-direction: column; }
   section.feature .screenshot {
     display: flex;

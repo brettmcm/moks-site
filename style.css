@@ -17,6 +17,12 @@ h1 {
   font-weight: 600;
   margin-bottom: 0.15em; }
 
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 0.5em; }
+
 a {
   display: inline;
   color: gray; }
@@ -59,11 +65,12 @@ section.feature {
     border: 1px solid rgba(0, 0, 0, 0.1); }
   section.feature .description {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     box-sizing: border-box;
-    padding: 5vw;
-    font-size: 1.25rem; }
+    padding: 5vw; }
 
 @media only screen and (min-width: 768px) {
   section.feature.right {

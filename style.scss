@@ -33,6 +33,26 @@ a {
   color: gray;
 }
 
+div.back-arrow {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #444;
+  border-bottom: 3px solid #444;
+  transform: rotate(45deg);
+  &:after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    border-bottom: 3px solid #444;
+    transform-origin: bottom left;
+    transform: rotate(-45deg) translateY(1.5px) ;
+  }
+}
+
 section.marquee {
   width: 100%;
   height: 70vh;
@@ -45,6 +65,14 @@ section.marquee {
     background: rgb(222,222,237);
     background: linear-gradient(0deg, rgba(210,210,222,1) 0%, #f1f1f1 100%); 
     }
+}
+
+section.privacy {
+  width: 90vw;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10vw 0;
+  color: #444;
 }
 
 
